@@ -13,6 +13,7 @@ import { LiskovSubstitutionPrincipleComponent } from './principles/liskov-substi
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RentComponent } from './principles/liskov-substitution-principle/rent/rent.component';
 import {HttpClientModule} from '@angular/common/http';
+import { SaleComponent } from './principles/liskov-substitution-principle/sale/sale.component';
 
 const materialComponents = [
 
@@ -24,8 +25,9 @@ const materialComponents = [
     // OpenClosedComponent,
     // OpenClosedPrincipleComponent,
     // MeiCompanyComponent,
-    // LiskovSubstitutionPrincipleComponent,
-    // RentComponent,
+    LiskovSubstitutionPrincipleComponent,
+    RentComponent,
+    SaleComponent,
   ],
   imports: [
     BrowserModule,

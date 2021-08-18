@@ -1,0 +1,40 @@
+<div class="container mt-5 sale">
+  <div class="alert alert-success" role="alert" *ngIf="formSent">
+    Dados enviados com sucesso
+  </div>
+  <h2>Venda o seu imóvel</h2>
+  <form [formGroup]="formGroup" class="d-flex flex-column">
+    <label for="type" class="form-label mt-3">Tipo de imóvel</label>
+    <select id="type" class="form-select" formControlName="propertyType">
+      <option>Casa</option>
+      <option>Apartamento</option>
+    </select>
+
+    <label for="description" class="form-label mt-3">Descrição</label>
+    <textarea
+      class="form-control"
+      id="description"
+      formControlName="description"
+    ></textarea>
+
+    <label for="price" class="form-label mt-3">Valor do imóvel</label>
+    <input class="form-control" id="price" formControlName="price" />
+
+    <div>
+      <input type="checkbox" id="financing" class="mt-3 sale__financing" formControlName="acceptFinancing">
+      <label class="form-label" for="financing">Aceita financiamento?</label>
+    </div>
+
+    <label for="phone" class="form-label mt-3">Telefone para contato</label>
+    <input class="form-control" id="phone" formControlName="phone" />
+
+    <button
+      type="button"
+      class="btn btn-dark btn-lg mt-3"
+      [disabled]="formSent"
+      (click)="save()"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
