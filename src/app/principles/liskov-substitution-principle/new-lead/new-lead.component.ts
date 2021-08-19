@@ -1,13 +1,9 @@
-import { Directive, EventEmitter, Input, Output } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Directive } from '@angular/core';
 import { NewLead } from 'src/app/shared/interfaces/lead';
 import { GenericService } from '../../../shared/generic.service';
 
-@Directive({
-  selector: 'app-new-lead'
-})
+@Directive({})
 export abstract class NewLeadComponent {
-  @Input() form!: FormGroup;
   formSent = false;
 
   constructor(protected genericService: GenericService) { }

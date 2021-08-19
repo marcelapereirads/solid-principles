@@ -14,6 +14,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RentComponent } from './principles/liskov-substitution-principle/rent/rent.component';
 import {HttpClientModule} from '@angular/common/http';
 import { SaleComponent } from './principles/liskov-substitution-principle/sale/sale.component';
+import { InterfaceSegregationPrincipleComponent } from './principles/interface-segregation-principle/interface-segregation-principle.component';
+import { StudentComponent } from './principles/interface-segregation-principle/student/student.component';
+import { TeacherComponent } from './principles/interface-segregation-principle/teacher/teacher.component';
 
 const materialComponents = [
 
@@ -28,6 +31,9 @@ const materialComponents = [
     LiskovSubstitutionPrincipleComponent,
     RentComponent,
     SaleComponent,
+    InterfaceSegregationPrincipleComponent,
+    StudentComponent,
+    TeacherComponent,
   ],
   imports: [
     BrowserModule,
