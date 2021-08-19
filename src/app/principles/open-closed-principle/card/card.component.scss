@@ -1,0 +1,9 @@
+.card {
+  min-height: 500px;
+  margin: 2rem;
+
+  &__image {
+    height: 400px;
+    object-fit: cover;
+  }
+}
