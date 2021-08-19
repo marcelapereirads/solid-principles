@@ -16,11 +16,6 @@ export class SaleComponent extends NewLeadComponent implements OnInit {
     return this.formGroup.get('price')?.value;
   }
 
-  get sellerComission() {
-    const comissionValue = 0.05;
-    return this.priceValue * comissionValue;
-  }
-
   constructor(
     protected genericService: GenericService,
     private formBuilder: FormBuilder,

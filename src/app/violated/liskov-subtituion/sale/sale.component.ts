@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { NewLeadComponent } from '../new-lead/new-lead.component';
-import { GenericService } from '../../../shared/generic.service';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { GenericService } from '../../../shared/generic.service';
+
 @Component({
-  selector: 'app-rent',
-  templateUrl: './rent.component.html',
+  selector: 'app-sale',
+  templateUrl: './sale.component.html',
+  styleUrls: ['./sale.component.scss'],
 })
-export class RentComponent extends NewLeadComponent implements OnInit {
+export class SaleComponent extends NewLeadComponent implements OnInit {
 
   formGroup!: FormGroup;
 
@@ -21,7 +23,7 @@ export class RentComponent extends NewLeadComponent implements OnInit {
     super(genericService);
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.buildForm();
   }
 
@@ -30,16 +32,12 @@ export class RentComponent extends NewLeadComponent implements OnInit {
       propertyType: ['', Validators.required],
       description: [''],
       price: [null, Validators.required],
+      acceptFinancing: [false],
       phone: ['', Validators.required],
     });
   }
 
   save() {
     this.submitLead(this.formGroup.value);
-  }
-
-  getSellerComission(propertyValue: number) {
-    const comissionValue = 0.10;
-    return propertyValue * comissionValue;
   }
 }

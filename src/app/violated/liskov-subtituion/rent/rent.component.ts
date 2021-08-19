@@ -38,7 +38,11 @@ export class RentComponent extends NewLeadComponent implements OnInit {
     this.submitLead(this.formGroup.value);
   }
 
-  getSellerComission(propertyValue: number) {
+  getSellerComission(propertyValue: number): number {
+    if (propertyValue <= 0) {
+      throw new Error('INVALID VALUE');
+    }
+
     const comissionValue = 0.10;
     return propertyValue * comissionValue;
   }
