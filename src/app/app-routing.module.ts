@@ -20,8 +20,8 @@ const routes: Routes = [
   { path: 'liskov-substitution-violated', component: LiskovSubtituionComponent },
   { path: 'interface-segregation-principle', component: InterfaceSegregationPrincipleComponent },
   { path: 'interface-segregation-violated', component: InterfaceSegregationComponent },
-  // { path: 'dependency-inversion-principle', component: DependecyInversionPrincipleComponent },
-  // { path: 'dependency-inversion-violated', component: DependecyInversionComponent },
+  { path: 'dependency-inversion-principle', component: DependecyInversionPrincipleComponent },
+  { path: 'dependency-inversion-violated', component: DependecyInversionComponent },
 ];
 
 @NgModule({
