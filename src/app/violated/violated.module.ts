@@ -10,6 +10,7 @@ import { OpenClosedComponent } from './open-closed/open-closed.component';
 import { LiskovSubtituionComponent } from './liskov-subtituion/liskov-subtituion.component';
 import { RentComponent } from './liskov-subtituion/rent/rent.component';
 import { SaleComponent } from './liskov-subtituion/sale/sale.component';
+import { SingleResponsibilityComponent } from './single-responsibility/single-responsibility.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SaleComponent } from './liskov-subtituion/sale/sale.component';
     LiskovSubtituionComponent,
     RentComponent,
     SaleComponent,
+    SingleResponsibilityComponent,
   ],
   imports: [
     CommonModule,

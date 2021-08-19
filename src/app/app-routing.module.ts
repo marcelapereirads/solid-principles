@@ -8,8 +8,10 @@ import { DependecyInversionPrincipleComponent } from './principles/dependecy-inv
 import { DependecyInversionComponent } from './violated/dependecy-inversion/dependecy-inversion.component';
 import { OpenClosedComponent } from './violated/open-closed/open-closed.component';
 import { LiskovSubtituionComponent } from './violated/liskov-subtituion/liskov-subtituion.component';
+import { SingleResponsibilityComponent } from './violated/single-responsibility/single-responsibility.component';
 
 const routes: Routes = [
+  { path: 'single-responsibility-violated', component: SingleResponsibilityComponent },
   { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
   { path: 'open-closed-violated', component: OpenClosedComponent },
   { path: 'liskov-substitution-principle', component: LiskovSubstitutionPrincipleComponent },
