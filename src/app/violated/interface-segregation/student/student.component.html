@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <div class="alert alert-success" role="alert" *ngIf="formSent">
+    Dados enviados com sucesso
+  </div>
+  <h2>Cadastro de Aluno</h2>
+  <form [formGroup]="formGroup" class="d-flex flex-column">
+    <label for="name" class="form-label mt-3">Nome</label>
+    <input class="form-control" id="name" formControlName="name" />
+
+    <label for="document" class="form-label mt-3">CPF</label>
+    <input class="form-control" id="document" formControlName="documentNumber" />
+
+    <label for="registrationNumber" class="form-label mt-3">Número de matrícula</label>
+    <input class="form-control" id="registrationNumber" formControlName="registrationNumber" />
+
+    <button
+      type="button"
+      class="btn btn-dark btn-lg mt-3"
+      [disabled]="formSent"
+      (click)="save()"
+    >
+      Salvar
+    </button>
+  </form>
+</div>
