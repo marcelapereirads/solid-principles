@@ -4,12 +4,16 @@ import { OpenClosedPrincipleComponent } from './principles/open-closed-principle
 import { LiskovSubstitutionPrincipleComponent } from './principles/liskov-substitution-principle/liskov-substitution-principle.component';
 import { InterfaceSegregationPrincipleComponent } from './principles/interface-segregation-principle/interface-segregation-principle.component';
 import { InterfaceSegregationComponent } from './violated/interface-segregation/interface-segregation.component';
+import { DependecyInversionPrincipleComponent } from './principles/dependecy-inversion-principle/dependecy-inversion-principle.component';
+import { DependecyInversionComponent } from './violated/dependecy-inversion/dependecy-inversion.component';
 
 const routes: Routes = [
-  //{ path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
+  { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
   { path: 'liskov-substitution-principle', component: LiskovSubstitutionPrincipleComponent },
   { path: 'interface-segregation-principle', component: InterfaceSegregationPrincipleComponent },
   { path: 'interface-segregation-violated', component: InterfaceSegregationComponent },
+  // { path: 'dependency-inversion-principle', component: DependecyInversionPrincipleComponent },
+  // { path: 'dependency-inversion-violated', component: DependecyInversionComponent },
 ];
 
 @NgModule({
