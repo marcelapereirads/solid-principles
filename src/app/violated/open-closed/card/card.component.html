@@ -1,0 +1,9 @@
+
+  <div class="card" style="width: 18rem;">
+    <img [src]="imageUrl" class="card-img-top card__image">
+    <div class="card-body">
+      <h4 class="card-title">{{title}}</h4>
+      <p *ngIf="synopsis">Sinopse: {{synopsis}}</p>
+      <span class="badge bg-success" *ngIf="available3D">Disponível em 3D</span>
+    </div>
+  </div>

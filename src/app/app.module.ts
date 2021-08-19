@@ -21,7 +21,6 @@ const materialComponents = [
 @NgModule({
   declarations: [
     AppComponent,
-    OpenClosedComponent,
     LiskovSubstitutionPrincipleComponent,
     RentComponent,
     SaleComponent,

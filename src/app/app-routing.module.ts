@@ -6,9 +6,11 @@ import { InterfaceSegregationPrincipleComponent } from './principles/interface-s
 import { InterfaceSegregationComponent } from './violated/interface-segregation/interface-segregation.component';
 import { DependecyInversionPrincipleComponent } from './principles/dependecy-inversion-principle/dependecy-inversion-principle.component';
 import { DependecyInversionComponent } from './violated/dependecy-inversion/dependecy-inversion.component';
+import { OpenClosedComponent } from './violated/open-closed/open-closed.component';
 
 const routes: Routes = [
   { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
+  { path: 'open-closed-violated', component: OpenClosedComponent },
   { path: 'liskov-substitution-principle', component: LiskovSubstitutionPrincipleComponent },
   { path: 'interface-segregation-principle', component: InterfaceSegregationPrincipleComponent },
   { path: 'interface-segregation-violated', component: InterfaceSegregationComponent },
