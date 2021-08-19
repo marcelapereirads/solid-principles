@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { GenericService } from '../../shared/generic.service';
 import { Consultant } from '../../shared/interfaces/consultant';
@@ -11,17 +12,20 @@ export class SingleResponsibilityComponent implements OnInit {
   consultants!: Consultant[];
   message = '';
 
-  constructor(private genericService: GenericService) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.loadUsers();
   }
 
+  /* Comunicação com o serviço dentro da classe é problemático, pois caso mude algo na estrutura
+  precisa ser alterado em todos os lugares */
   loadUsers() {
-    this.genericService.getAll().subscribe(resp => this.consultants = resp.data);
+    this.http.get('https://reqres.in/api/users').subscribe((resp: any) => this.consultants = resp.data); //corrigir
   }
 
-  sendMessage(consultantName: string) {
+  /* Cada classe deveria ser responsável por apenas um assunto */
+  setMessage(consultantName: string) {
     this.message = `Gostaria de entrar em contato com o consultor ${consultantName}.`;
   }
 

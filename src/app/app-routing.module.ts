@@ -9,8 +9,10 @@ import { DependecyInversionComponent } from './violated/dependecy-inversion/depe
 import { OpenClosedComponent } from './violated/open-closed/open-closed.component';
 import { LiskovSubtituionComponent } from './violated/liskov-subtituion/liskov-subtituion.component';
 import { SingleResponsibilityComponent } from './violated/single-responsibility/single-responsibility.component';
+import { SingleResponsibilyPrincipleComponent } from './principles/single-responsibily-principle/single-responsibily-principle.component';
 
 const routes: Routes = [
+  { path: 'single-responsibility-principle', component: SingleResponsibilyPrincipleComponent },
   { path: 'single-responsibility-violated', component: SingleResponsibilityComponent },
   { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
   { path: 'open-closed-violated', component: OpenClosedComponent },

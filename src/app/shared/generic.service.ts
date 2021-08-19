@@ -12,4 +12,8 @@ export class GenericService {
   post(params: any): Observable<any> {
     return this.http.post('https://reqres.in/api/users', params);
   }
+
+  getAll(): Observable<any> {
+    return this.http.get('https://reqres.in/api/users');
+  }
 }
