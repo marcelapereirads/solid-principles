@@ -10,8 +10,10 @@ import { OpenClosedComponent } from './violated/open-closed/open-closed.componen
 import { LiskovSubtituionComponent } from './violated/liskov-subtituion/liskov-subtituion.component';
 import { SingleResponsibilityComponent } from './violated/single-responsibility/single-responsibility.component';
 import { SingleResponsibilyPrincipleComponent } from './principles/single-responsibily-principle/single-responsibily-principle.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'single-responsibility-principle', component: SingleResponsibilyPrincipleComponent },
   { path: 'single-responsibility-violated', component: SingleResponsibilityComponent },
   { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
