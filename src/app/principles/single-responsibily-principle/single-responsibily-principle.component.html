@@ -1,17 +1,21 @@
 <div class="container mt-5">
-  <h2>Single Responsibility Principle - Princípio da Responsabilidade Única </h2>
-  <h5>Uma classe deve ter um, e somente um, motivo para mudar.</h5>
-
   <div class="mt-5">
-    <h2>Conheça nossos consultores</h2>
-    <div *ngFor="let user of consultants" class="d-flex mb-3">
-      <img [src]="user.avatar" />
-      <div class="user__info m-3">
-        <h5>{{user.first_name}} {{user.last_name}}</h5>
-        <p>{{user.email}}</p>
-        <a href="https://wa.me/553499999999?text={{message}}" target="blank">
-          <button class="btn btn-dark" (click)="contact(user.first_name)">Entrar em contato</button>
-        </a>
+    <h2 class="mb-3">Conheça nossos consultores</h2>
+    <div class="row">
+      <div *ngFor="let user of consultants" class="col-lg-4 col-12 d-flex mb-5">
+        <img [src]="user.avatar" />
+        <div class="user__info ms-2">
+          <h5>{{ user.first_name }} {{ user.last_name }}</h5>
+          <p>{{ user.email }}</p>
+          <a
+            href="https://wa.me/553499999999?text={{ message }}"
+            target="blank"
+          >
+            <button class="btn btn-dark" (click)="contact(user.first_name)">
+              Entrar em contato
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   </div>
