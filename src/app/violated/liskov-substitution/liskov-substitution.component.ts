@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { BusinessType } from '../../shared/enums/business-type';
 
 @Component({
-  selector: 'app-liskov-substitution-principle',
-  templateUrl: './liskov-substitution-principle.component.html',
-  styleUrls: ['./liskov-substitution-principle.component.scss']
+  selector: 'app-liskov-substitution',
+  templateUrl: './liskov-substitution.component.html',
+  styleUrls: ['./liskov-substitution.component.scss']
 })
-export class LiskovSubstitutionPrincipleComponent {
+export class LiskovSubstitutionComponent {
 
   readonly RENT = BusinessType.rent;
   readonly SALE = BusinessType.sale;
@@ -15,4 +15,5 @@ export class LiskovSubstitutionPrincipleComponent {
   changeTab(newTab: BusinessType) {
     this.tabActive = newTab;
   }
+
 }

@@ -7,9 +7,9 @@ import { InterfaceSegregationComponent } from './interface-segregation/interface
 import { SharedModule } from '../shared/shared.module';
 import { DependecyInversionComponent } from './dependecy-inversion/dependecy-inversion.component';
 import { OpenClosedComponent } from './open-closed/open-closed.component';
-import { LiskovSubtituionComponent } from './liskov-subtituion/liskov-subtituion.component';
-import { RentComponent } from './liskov-subtituion/rent/rent.component';
-import { SaleComponent } from './liskov-subtituion/sale/sale.component';
+import { LiskovSubstitutionComponent } from './liskov-substitution/liskov-substitution.component';
+import { RentComponent } from './liskov-substitution/rent/rent.component';
+import { SaleComponent } from './liskov-substitution/sale/sale.component';
 import { SingleResponsibilityComponent } from './single-responsibility/single-responsibility.component';
 
 @NgModule({
@@ -17,10 +17,11 @@ import { SingleResponsibilityComponent } from './single-responsibility/single-re
     InterfaceSegregationComponent,
     StudentComponent,
     TeacherComponent,
+    ////////////////////
     //DependecyInversionComponent,
     OpenClosedComponent,
     CardComponent,
-    LiskovSubtituionComponent,
+    LiskovSubstitutionComponent,
     RentComponent,
     SaleComponent,
     SingleResponsibilityComponent,

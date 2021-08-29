@@ -7,7 +7,7 @@ import { InterfaceSegregationComponent } from './violated/interface-segregation/
 import { DependecyInversionPrincipleComponent } from './principles/dependecy-inversion-principle/dependecy-inversion-principle.component';
 import { DependecyInversionComponent } from './violated/dependecy-inversion/dependecy-inversion.component';
 import { OpenClosedComponent } from './violated/open-closed/open-closed.component';
-import { LiskovSubtituionComponent } from './violated/liskov-subtituion/liskov-subtituion.component';
+import { LiskovSubstitutionComponent } from './violated/liskov-substitution/liskov-substitution.component';
 import { SingleResponsibilityComponent } from './violated/single-responsibility/single-responsibility.component';
 import { SingleResponsibilyPrincipleComponent } from './principles/single-responsibily-principle/single-responsibily-principle.component';
 import { HomeComponent } from './home/home.component';
@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'open-closed-principle', component: OpenClosedPrincipleComponent },
   { path: 'open-closed-violated', component: OpenClosedComponent },
   { path: 'liskov-substitution-principle', component: LiskovSubstitutionPrincipleComponent },
-  { path: 'liskov-substitution-violated', component: LiskovSubtituionComponent },
+  { path: 'liskov-substitution-violated', component: LiskovSubstitutionComponent },
   { path: 'interface-segregation-principle', component: InterfaceSegregationPrincipleComponent },
   { path: 'interface-segregation-violated', component: InterfaceSegregationComponent },
   { path: 'dependency-inversion-principle', component: DependecyInversionPrincipleComponent },
